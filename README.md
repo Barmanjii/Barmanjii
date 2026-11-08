@@ -1,21 +1,22 @@
-### Hi, I'm Vijay
+### I build the backends robot fleets run on.
 
-Backend engineer in Pune. I build the software behind robot fleets, from the robot to the cloud to the operator's screen.
+Backend engineer at Peppermint Robotics (autonomous cleaning robots), Pune. Python and AWS first, from the robot to the cloud to the operator's screen. Most of my work code is private, so the portfolio tells it as short write ups.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-barmanjii.github.io-0a6b8a?style=flat-square)](https://barmanjii.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-barmanjii88-0a66c2?style=flat-square)](https://www.linkedin.com/in/barmanjii88)
-[![Email](https://img.shields.io/badge/Email-vbarman116%40gmail.com-14171a?style=flat-square)](mailto:vbarman116@gmail.com)
+<samp><a href="https://barmanjii.github.io">portfolio</a> · <a href="https://www.linkedin.com/in/barmanjii88">linkedin</a> · <a href="mailto:vbarman116@gmail.com">email</a></samp>
 
-**Selected work** (work code is private; the portfolio has a case study for each)
+```mermaid
+flowchart LR
+  R["Robot<br/>ROS 2, C++"] --> S["Site<br/>Docker, MQTT, mTLS"] --> C["Cloud<br/>FastAPI, AWS, Terraform"] --> O["Operator<br/>React, Flutter"]
+```
 
-- Moved live customers from the AWS India region to a US region, with global routing on Lambda and DynamoDB, all in Terraform
-- Shipped a fleet manager to a factory with no internet, as an offline Docker stack with MQTT over mutual TLS
-- Redesigned fleet reporting pipelines for faster, more accurate robot reports
-- Built a ROS 2 C++ node that streams robot telemetry to the cloud
-- Built operator screens in React and Flutter, and a FastAPI dashboard backend with access rules in OPA
+**Selected work**
 
-**How I work with AI:** coding agents (Claude Code, Cursor) every day, inside guardrails: written rules the agents follow, a reviewed plan before code, tests and a dry run before anything ships. I helped write my team's agent rules.
+- [Two regions, one fleet](https://barmanjii.github.io/work/two-regions.html): one login for the world, data that stays in its region, and a robot's history moves when the robot does.
+- [The robot's gateway to the cloud](https://barmanjii.github.io/work/robot-gateway.html): one service on every robot sends data up, takes settings down, and serves a web editor to field engineers.
+- [Licenses that survive a power cut](https://barmanjii.github.io/work/licenses.html): a broken license file can stop a working robot. Now it is hard to break and quick to fix.
 
-**Building now:** Fleet Copilot, a VDA 5050 robot fleet simulator with an MCP server, OPA gated writes and evals. Coming January 2027.
+**How I work with AI:** coding agents every day, inside guardrails: written rules the agents follow, a reviewed plan before code, tests and a dry run before anything ships.
 
-[![Skills](https://skillicons.dev/icons?i=py,fastapi,postgres,redis,aws,terraform,docker,linux,ros,cpp,react,ts,flutter&theme=light&perline=13)](https://barmanjii.github.io)
+**Building now:** Fleet Copilot, a VDA 5050 robot fleet simulator with an AI agent, OPA gated writes and evals. January 2027.
+
+<img src="assets/skills.svg" alt="Python, FastAPI, PostgreSQL, Redis, AWS, Terraform, Docker, Linux, ROS, C++, React, TypeScript, Flutter" height="40">
